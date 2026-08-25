@@ -1,10 +1,10 @@
-# 🎓 Federal University Dutse (FUD) Auction Management System
+# Federal University Dutse (FUD) Auction Management System
 
 A real-time, secure, role-based campus auction platform designed to streamline student asset exchanges and institutional asset disposal.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -17,7 +17,7 @@ A real-time, secure, role-based campus auction platform designed to streamline s
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The FUD Auction Management System addresses security, transparency, and verification vulnerabilities in campus trading at Federal University Dutse (FUD). By replacing unmonitored messaging channels with a centralized web platform, students and staff can trade hostel gear, textbooks, project hardware, and campus assets securely.
 
@@ -31,9 +31,9 @@ The platform:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🔒 Advanced Authentication & Security
+### Advanced Authentication & Security
 
 - Encrypted passwords using **bcryptjs** (salt factor 10)
 - Stateless authentication via **JSON Web Tokens** (jsonwebtoken)
@@ -41,34 +41,34 @@ The platform:
 - Confirm password validation and toggle-eye visibility
 - Dedicated password reset recovery flow
 
-### ⚡ Real-Time Bidding Engine
+### Real-Time Bidding Engine
 
 - Instant WebSocket price broadcasts using **Socket.IO**
 - Dynamic live countdown timers (HH:MM:SS) on active listings
 - Automatic validation ensuring bids are strictly higher than current leading prices
 - Programmatic self-bidding block — returns `400 Bad Request` if a seller attempts to bid on their own item
 
-### ⚙️ Automated Settlement & Exchange Pass Codes
+### Automated Settlement & Exchange Pass Codes
 
 - Background task scheduling using **node-cron** checking expired auctions every minute
 - Automatic winner determination upon timer expiration
 - Automated generation of cryptographic **Exchange Pass Codes** (`FUD-PASS-XXXX`) to verify safe physical handovers on campus
 
-### 🛡️ Capped Admin Overwatch Console
+### Capped Admin Overwatch Console
 
 - System stats dashboard (Total Users, Active Admins, Total Auctions, Live Auctions)
 - Role management enabling administrators to promote/demote users with a strict **5-Admin maximum** limit
 - Direct Virtual Wallet Top-Up modals to fund user balances
 - Listing moderation capabilities
 
-### 🔍 Discovery & Activity Alerts
+### Discovery & Activity Alerts
 
 - Keyword/title search bar and category filtering (Academic Books, Electronics, Hostel Appliances, Vehicles, Fashion)
 - Activity Notification Center (`notifications.html`) tracking live bid events, outbid alerts, and winning passes
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 
@@ -98,7 +98,7 @@ The platform:
 
 ---
 
-## 💻 Installation & Local Setup
+## Installation & Local Setup
 
 ### 1. Clone the Repository
 
@@ -160,7 +160,7 @@ This project is optimized for deployment on [Render](https://render.com).
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Authentication (`/api/auth`)
 
@@ -192,7 +192,7 @@ This project is optimized for deployment on [Render](https://render.com).
 
 ---
 
-## 📋 Project Documentation & Guidelines
+## Project Documentation & Guidelines
 
 This software project was developed in accordance with the undergraduate research guidelines of the **Department of Software Engineering, Faculty of Computing, Federal University Dutse (FUD)**.
 
